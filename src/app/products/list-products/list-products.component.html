@@ -1,0 +1,20 @@
+<div class="km-cols">
+  <mat-card class="km-card" *ngFor="let product of products">
+    <mat-card-header>
+      <div mat-card-avatar class="km-avatar">
+        <img [src]="product.uphotoURL">
+      </div>
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <mat-card-subtitle>{{ product.udisplayName }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="product.photo" [alt]="product.name">
+    <mat-card-content>
+      <p>
+        {{ product.description }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions *ngIf="product.uid == user.uid">
+      <button mat-button (click)="delete(product)">DELETE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

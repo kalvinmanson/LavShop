@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "lavshop-1c452": {
+      "hosting": {
+        "LavShop": [
+          "lavshop-1c452"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "lavshop-1c452"
+  }
+}

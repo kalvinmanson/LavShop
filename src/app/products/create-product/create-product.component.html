@@ -1,0 +1,15 @@
+<div class="km-container">
+  <mat-form-field class="km-w-100">
+    <mat-label>Nombre del producto</mat-label>
+    <input matInput placeholder="Tarjeta de video GFroce" [(ngModel)]="product.name">
+  </mat-form-field>
+  <mat-form-field class="km-w-100">
+    <mat-label>URL Photo</mat-label>
+    <input matInput placeholder="https://..../archivos.jpg" [(ngModel)]="product.photo">
+  </mat-form-field>
+  <mat-form-field class="km-w-100">
+    <mat-label>Descripción</mat-label>
+    <textarea cdkTextareaAutosize matInput placeholder="Ej. Producto de prueba..." [(ngModel)]="product.description"></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="create()">Guardar</button>
+</div>
